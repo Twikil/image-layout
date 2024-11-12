@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Layout</title>
+<style>
+ 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    
+  }
+
+  
+  .container {
+    flex-direction: row;
+  }
+
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+    .container img {
+      flex: 1 1 48%; 
+    }
+  }
+
+  
+  @media (max-width: 480px) {
+    .container img {
+      flex: 1 1 100%; 
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://media.istockphoto.com/id/594064356/photo/classic-ford-mustang-convertible-parked-outdoors-vintage-filter.jpg?s=612x612&w=0&k=20&c=3hCw1t6-FSpunBbKRkmgRBZq8rvW3I_omElrD3flAeA=" alt="Image 1">
+  <img src="https://media.istockphoto.com/id/594064356/photo/classic-ford-mustang-convertible-parked-outdoors-vintage-filter.jpg?s=612x612&w=0&k=20&c=3hCw1t6-FSpunBbKRkmgRBZq8rvW3I_omElrD3flAeA=" alt="Image 2">
+  <img src="https://media.istockphoto.com/id/594064356/photo/classic-ford-mustang-convertible-parked-outdoors-vintage-filter.jpg?s=612x612&w=0&k=20&c=3hCw1t6-FSpunBbKRkmgRBZq8rvW3I_omElrD3flAeA=" alt="Image 3">
+  <img src="https://media.istockphoto.com/id/594064356/photo/classic-ford-mustang-convertible-parked-outdoors-vintage-filter.jpg?s=612x612&w=0&k=20&c=3hCw1t6-FSpunBbKRkmgRBZq8rvW3I_omElrD3flAeA=" alt="Image 4">
+</div>
+
+</body>
+</html>
